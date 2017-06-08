@@ -1,36 +1,181 @@
-body {
-  margin: 0;
+* {
+  text-align: center;
   font-family: Helvetica;
-  font-size: 22px;
   color: seashell;
   background-color: black;
   opacity: 0.9;
 }
 
-header {
+html {
+    font-size: 22px;
+}
 
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  margin: 0;
 }
 
 .logo {
-
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
 }
 
 .logo img {
-
-}
-
-.logo span {
-
-}
-
-header nav {
-
+  height: 50px;
+  opacity: 0.9;
 }
 
 nav span {
-
+  display: inline-block;
+  padding: 20px 10px;
 }
 
 a {
+  text-decoration: underline;
+  opacity: 0.9;
+}
 
+.content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  top: 60px;
+}
+
+.mission-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  width: 1200px;
+  height: 700px;
+  background-image: url(../images/img-mission-background.jpg);
+}
+
+.mission-statement {
+  align-self: center;
+  width: 100%;
+  padding: 10px 0px;
+  margin: 0px; auto;
+  opacity: 1;
+}
+
+.mission-statement>h2, h4 {
+  opacity: 0.9;
+}
+
+#location-container>h2 {
+  background-color: transparent;
+}
+
+.mission-statement>h2 {
+  margin: 0px auto 20px auto;
+}
+
+.mission-statement h4 {
+  margin: 20px auto 0px auto;
+}
+
+.tea-section {
+  display: flex;
+}
+
+#featured-container {
+  display: block;
+  width: 1000px;
+  align-self: center;
+  margin: auto;
+}
+
+.featured-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /* I've chosen to wrap the featured items because it seems like a better user experience; */
+  /* However, that is arguable since I couldn't wrap the locations as well due to there being*/
+  /* a specified height for that container. Perhaps they should both wrap or not wrap consistently.*/
+  justify-content: center;
+}
+
+.featured img {
+  display: block;
+  width: 300px;
+  height: 200px;
+  padding-right: 20px;
+  margin-bottom: 0px;
+}
+
+h4 .featured {
+  margin-top: 10px;
+}
+
+.location-section {
+  display: flex;
+}
+
+#location-container {
+  display: block;
+  align-self: center;
+  width: 1200px;
+  height: 500px;
+  background-image: url(../images/img-locations-background.jpg);
+  margin: 60px auto 10px auto;
+  padding-top: 90px;
+}
+
+#location-container>h2 {
+  margin: 0;
+}
+
+.location-gallery {
+  display: flex;
+/*  flex-wrap: wrap; */
+/* Note: I think wrapping the locations would be a better user experience */
+/* but since a height for the container is specified and the boxes won't fit */
+/* if all 3 wrap to stack vertically, I've commented out the wrapping */
+  justify-content: center;
+  background-color: transparent;
+}
+
+.location-box {
+  display: block;
+  width: 300px;
+  opacity: 1;
+  margin: 15px 20px 0px 20px;
+}
+
+.location-box>h3, p {
+  padding: 4px 0px 9px 0px;
+  opacity: 0.9;
+}
+
+.contact {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.contact h2 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
 }
