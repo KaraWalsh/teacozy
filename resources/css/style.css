@@ -1,17 +1,17 @@
 * {
-  text-align: center;
   font-family: Helvetica;
   color: seashell;
   background-color: black;
   opacity: 0.9;
 }
 
-html {
-    font-size: 22px;
-}
-
 body {
   margin: 0;
+  text-align: center;
+}
+
+html {
+    font-size: 22px;
 }
 
 header {
